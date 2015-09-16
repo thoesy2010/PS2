@@ -8,16 +8,17 @@ public class MyInteger {
 
 	private int value;
 
-	public MyInteger(int value2) {
-		value = value2;
-	}
-
-	public int GetValue() {
+	public int getValue() {
 		return value;
 	}
 
+	public MyInteger(int value2) {
+		this.value = value2;
+	}
+
+
 	public boolean isEven() {
-		if (value % 2 == 0) {
+		if (this.value % 2 == 0) {
 			return true;
 		}
 		return false;
@@ -62,17 +63,17 @@ public class MyInteger {
 
 	public static boolean isEven(MyInteger myInteger) {
 
-		return myInteger.isEven(myInteger.GetValue());
+		return myInteger.isEven(myInteger.getValue());
 	}
 
 	public static boolean isOdd(MyInteger myInteger) {
 
-		return myInteger.isOdd(myInteger.GetValue());
+		return myInteger.isOdd(myInteger.getValue());
 	}
 
 	public static boolean isPrime(MyInteger myInteger) {
 
-		return myInteger.isPrime(myInteger.GetValue());
+		return myInteger.isPrime(myInteger.getValue());
 	}
 	
 	public boolean equals(int z){
@@ -82,7 +83,7 @@ public class MyInteger {
 		return false;
 	}
 	public boolean equals(MyInteger myInteger){
-		return myInteger.equals(myInteger.GetValue());
+		return myInteger.equals(myInteger.getValue());
 	}
 	
 	public static int parselnt(char[] c){
